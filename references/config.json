@@ -1,0 +1,42 @@
+{
+  "classification": {
+    "similarity_threshold": 0.6,
+    "min_group_size": 2,
+    "max_groups": 10,
+    "language_preference": "auto",
+    "enable_synonym_detection": true,
+    "enable_stemming": true,
+    
+    "clustering_algorithm": "dbscan",
+    "dbscan_eps": 0.5,
+    "dbscan_min_samples": 2,
+    
+    "representative_selection": "centroid",
+    "output_format": "detailed",
+    
+    "adult_content_specific": {
+      "enabled": true,
+      "categories": ["视频", "图片", "音频", "文本", "直播"],
+      "scenes": ["室内", "室外", "特殊场景", "公共场所", "私人空间"],
+      "characteristics": ["自拍", "专业拍摄", "偷拍", "摆拍"],
+      "intensity_levels": ["轻度", "中度", "重度", "极端"]
+    }
+  },
+  
+  "predefined_groups": {
+    "video_related": ["短视频", "长视频", "直播", "录播", "高清", "超清"],
+    "image_related": ["写真", "套图", "动图", "漫画", "插画", "照片"],
+    "audio_related": ["ASMR", "语音", "录音", "音乐", "音效"],
+    "scene_related": ["室内", "室外", "卧室", "浴室", "办公室", "教室"],
+    "character_related": ["单人", "双人", "多人", "男女", "女女", "男男"]
+  },
+  
+  "synonym_mapping": {
+    "短视频": ["短剧", "小视频", "微视频"],
+    "长视频": ["电影", "长片", "完整版"],
+    "直播": ["实时", "在线直播", "LIVE"],
+    "写真": ["照片", "肖像", "人像"],
+    "套图": ["图集", "图片集", "相册"],
+    "动图": ["GIF", "动态图", "动画"]
+  }
+}
