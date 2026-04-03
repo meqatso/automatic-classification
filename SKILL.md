@@ -6,7 +6,7 @@ description: >
   关键规则：representative必须是组成员中的一个原始标签，不能是新创建的概括性标签。
   Use when: 用户需要将标签集合按语义相似度分组，或说"以我给出的标签、分类集合，给出分组结果"。
 author: ShiQing
-homepage: https://github.com/你的用户名/你的仓库名
+homepage: https://github.com/meqatso/automatic-classification.git
 license: MIT
 ---
 
